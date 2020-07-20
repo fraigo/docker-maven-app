@@ -8,5 +8,6 @@ COPY . /usr/src/mymaven
 WORKDIR /usr/src/mymaven
 
 RUN mvn package
+RUN mvn exec:java 
 
-CMD ["mvn","package"]
+CMD ["mvn","exec:java","-Dexec.mainClass=scraper.App"]

@@ -23,7 +23,6 @@
         <artifactId>byte-buddy</artifactId>
         <version>1.10.13</version>
     </dependency>
-
   </dependencies>
   <build>
     <plugins>
