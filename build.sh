@@ -1,1 +1,1 @@
-docker build -t maven-app . && docker run -it --rm --name maven-app -v $(pwd)/target:/usr/src/mymaven/target maven-app mvn package
+docker build -t maven-app . && ./exec.sh mvn package
