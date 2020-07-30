@@ -36,6 +36,10 @@
           </archive>
           <descriptorRefs>
             <descriptorRef>jar-with-dependencies</descriptorRef>
+            <!-- remove -jar-with-dependencies. from JAR filename -->
+            <appendAssemblyId>false</appendAssemblyId>
+            <!-- change full JAR filename using custom name and version -->
+            <finalName>example-${project.version}</finalName>
           </descriptorRefs>
         </configuration>
       </plugin>
